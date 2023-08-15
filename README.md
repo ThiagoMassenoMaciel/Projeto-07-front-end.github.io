@@ -4,7 +4,9 @@
 # Previous
 ![Project GIF ](https://github.com/ThiagoMassenoMaciel/Projeto-07-front-end.github.io/blob/main/--vid.gif)
 ![WebDevWebsiteDevelopmentGIF](https://github.com/ThiagoMassenoMaciel/Projeto-07-front-end.github.io/assets/107934374/27def87c-a9a6-44a8-b647-3e4bc29f7564)
-
+# Challlenges
+## d1 [over here](https://thiagomassenomaciel.github.io/d1-Projeto-07-front-end.github.io/)
+## d2 [to come over here]([https://thiagomassenomaciel.github.io/d1-Projeto-07-front-end.github.io/](https://thiagomassenomaciel.github.io/d2-Projeto-07-front-end.github.io/))
 
 
 # Future ideas RELATED:  
