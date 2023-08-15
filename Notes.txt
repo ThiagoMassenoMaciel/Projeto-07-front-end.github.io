@@ -1,0 +1,199 @@
+VERSION   1.0
+    
+    funcionalities
+     Just work's if the person got the first try 
+     
+
+
+
+    Turn off the arrows into the input type number
+            
+        #FirstInput::-webkit-inner-spin-button, #FirstInput::-webkit-outer-spin-button {
+          -webkit-appearance: none;
+          margin: 0; 
+        }
+
+    DOM
+        let variable_named_html_dom = querySelector('tag_html')     -got the first tag 
+                                    = querySelectorAll('tag_html')  -got all tag on a document/tag_html
+        variable_named_html_dom.innerText
+        variable_named_html_dom.classList.add("new_name_class")       
+                                        .remove("new_name_class")
+                                        .toggle("other_name")      -switch  add ---:> remove
+                                                                    -switch  remove---:> add
+
+
+    ERROR:
+      #Forgot the point into the querySelector(feel like is css must to put point to a classname)
+            if( number_user == random){
+              document.querySelector('.screen1').classList.add('hide')
+            }
+
+      #Not initialized the counter with 1 
+          let count = 1;
+
+      #Bug   if you win not the first try the program end
+          This happens cuz you just get the value one time before execute the function
+
+          HOW TO CORRECT
+              You must to get the diferent value each moment the user click on the button 
+              In oder hand you have to put the querySelector(valueinput) into the function
+
+    Learnings:
+
+    1[] 
+      If you make without think first what is the path (actions by the user and reactions after him did something) and events and variables you'll lose time findind new bugs and try to fixed them;
+    2[]
+      class names are understand by querySelector like the same way it is on a file css  
+
+VERSION   1.1.0
+    funcionalities
+    -Correct done last version Bug 
+    -Even you didn't get done at first try , if your next try become correct, you'll know it;
+
+
+    #Bug
+        When you play again and get done first try , the screen will show you past tries that doesn't get you done 
+    HOW TO CORRECT it 
+        must initializate with value zero the variable that represent times when the user didn't win on aactual try
+
+VERSION   1.1.1
+    funcionalities
+    -Correct done last version Bug 
+    -If you choose play again the last lost tries won't be considere on your new time play again
+
+
+    #Bug
+        After play again , the first try are desconsidered into the counter  
+    HOW TO CORRECT it 
+        must initializate with value not zero , but ( 1)  the variable that represent times when the user didn't win on actual try
+   
+
+VERSION   1.1.2
+    funcionalities
+    -Correct done last version Bug 
+    -If you choose play again the random-number are the same as last played
+    -After you play the button try you don't need anymore to delete las number that you typped
+
+
+    #Bug
+        When you play again there's no new random number if you didn't update the page
+    HOW TO CORRECT it 
+        I dont know - future versions
+
+
+VERSION   1.1.3
+    funcionalities
+    -Not Correct last version Bug 
+    -Code more Legyble and Manutenable
+
+    -In order to repeat the code   document.querySelector('') again and again , create variable at the top of file and makes code more leability to read 
+
+        EXAMPLE:
+        This is better 
+
+            ||||||||||
+            const div1 = document.querySelector('.screen1')
+              {
+                div1.classList.add('hide')
+              }
+
+
+            |||||||||||||||||||||||||||||
+            div2.document.querySelector('h2').innerText = `Finally you got it! after ${counter} tries`
+
+        Than this 
+            ||||||||||
+            document.querySelector('.screen1').classList.add('hide')
+
+
+
+
+            ||||||||||||||||||||||||||||||
+            document.querySelector('.screen2 h2').innerText = `Finally you got it! after ${counter} tries`
+
+    #Bug
+        When you play again there's no new random number if you didn't update the page
+    HOW TO CORRECT it 
+        I dont know - future versions
+
+
+VERSION   1.1.4
+
+    funcionalities
+    -Not Correct last version Bug 
+    -Code more Legyble and Manutenable
+
+    -In order to use repetitive lines of code to switch the 
+     display none beetween two divs   screen1 and screen2
+     just create the function that makes it 
+
+      EXAMPLE :
+
+      THIS IS better THAN   ------------------------>troquei   o  .add  .remove pelo   .toggle
+            if( Number(number_user.value) == random){
+
+              swap_display_none()
+              div2_h2.innerText = `Finally you got it! after ${counter} tries`
+
+            }
+            number_user.value = " ";  // If it was a tag h2    must use       number_user.innerText = " "  
+            ++counter
+            }
+
+            function swap_display_none(){
+              div1.classList.toggle('hide')
+              div2.classList.toggle('hide')
+            }
+
+            function reaction2(){
+              swap_display_none();
+              counter = 1;
+            }
+
+
+
+      THIS \,
+          if( Number(number_user.value) == random){
+
+              div1.classList.add('hide')
+              div2.classList.remove('hide')
+
+              document.querySelector('.screen2 h2').innerText = `Finally you got it! after ${counter} tries`
+
+          }
+            number_user.value = " ";  // If it was a tag h2    must use       number_user.innerText = " "  
+            ++counter
+            console.log("-")
+
+          }
+
+          function reaction2(){
+            div2.classList.add('hide')
+            div1.classList.remove('hide')
+
+            counter = 1;
+          }
+
+    #Bug
+        When you play again there's no new random number if you didn't update the page
+    HOW TO CORRECT it 
+        I dont know - future versions
+
+
+
+VERSION   1.1.5
+
+    funcionalities
+    -Not Correct last version Bug 
+    -Code title variables more Legyble and Manutenable
+
+  
+    #Bug
+        When you play again there's no new random number if you didn't update the page
+    HOW TO CORRECT it 
+        I dont know - future versions
+
+
+
+
