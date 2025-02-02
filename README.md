@@ -1,5 +1,4 @@
-# GUESSING GAME
-## link [here](https://thiagomassenomaciel.github.io/Projeto-07-front-end.github.io/Version-1-1-5/index.html)
+# Jogo de Adivinhação GUESSING GAME [link](https://thiagomassenomaciel.github.io/Projeto-07-front-end.github.io/Version-1-1-5/index.html)
 +[details](https://thiagomassenomaciel.github.io/Projeto-07-front-end.github.io/Notes.txt)
 # Previous
 ![Project GIF ](https://github.com/ThiagoMassenoMaciel/Projeto-07-front-end.github.io/blob/main/--vid.gif)
